@@ -33,7 +33,7 @@ header{
     padding: 0 4vh;
     height: 70vh;
     width: 100%;
-    background: linear-gradient(to bottom, #00000000, #00000000, rgb(51, 0, 0), #000)
+    background: linear-gradient(to bottom, #00000000, rgba(255, 0, 0, 0.062), rgba(255, 0, 0, 0.062), RED, rgb(51, 0, 0), #000)
 }
 h1{
     font-size: 2.1rem;
@@ -138,6 +138,7 @@ h2{
     align-items: center;
     gap: 5vh;
     padding: 5vh 4vh;
+    background: linear-gradient(to top, #2516FB, rgb(17, 58, 182), rgb(53, 53, 84), rgba(250, 246, 246, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 h3{
     font-size: 1.45rem;
@@ -226,6 +227,17 @@ li>a{
 }
 li:active{
     transform: scale(0.95);
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+.Arrow {
+  width: 4vh;
+  height: auto;
+  animation: slide 1s infinite;
 }
 
 
